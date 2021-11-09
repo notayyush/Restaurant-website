@@ -1,145 +1,431 @@
-{% extends 'base.html' %}
-{% block title %}Home{% endblock title %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive food website design tutorial </title>
 
-{% block body %}
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-<div class="container-fluid px-0">
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-       
-  <ol class="carousel-indicators">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
     
-    
-       
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-  </ol>
- 
-  <div class="carousel-inner">
+<!-- header section starts  -->
 
-    <div class="carousel-item active">
-      <img src="/static/3.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption">
-        <h1>order online</h1>
-      </div>
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#speciality">speciality</a>
+        <a href="#popular">popular</a>
+        <a href="#gallery">gallery</a>
+        <a href="#review">review</a>
+        <a href="#order">order</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>food made with love</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!</p>
+        <a href="#" class="btn">order now</a>
     </div>
-    <div class="carousel-item">
-      <img src="/static/4.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption">
-        <h1>order online</h1>
-      </div>
+
+    <div class="image">
+        <img src="/static/images/home-img.png" alt="">
     </div>
-    <div class="carousel-item">
-      <img src="/static/5.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption">
-        <h1>order online</h1>
-      </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- speciality section starts  -->
+
+<section class="speciality" id="speciality">
+
+    <h1 class="heading"> our <span>speciality</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="/static/images/s-img-1.jpg" alt="">
+            <div class="content">
+                <img src="/static/images/s-1.png" alt="">
+                <h3>tasty burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="/static/images/s-img-2.jpg" alt="">
+            <div class="content">
+                <img src="/static/images/s-2.png" alt="">
+                <h3>tasty pizza</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="/static/images/s-img-3.jpg" alt="">
+            <div class="content">
+                <img src="/static/images/s-3.png" alt="">
+                <h3>cold ice-cream</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="/static/images/s-img-4.jpg" alt="">
+            <div class="content">
+                <img src="/static/images/s-4.png" alt="">
+                <h3>cold drinks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="/static/images/s-img-5.jpg" alt="">
+            <div class="content">
+                <img src="/static/images/s-5.png" alt="">
+                <h3>tasty sweets</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="/static/images/s-img-6.jpg" alt="">
+            <div class="content">
+                <img src="/static/images/s-6.png" alt="">
+                <h3>healty breakfast</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+            </div>
+        </div>
+
     </div>
+
+</section>
+
+<!-- speciality section ends -->
+
+<!-- popular section starts  -->
+
+<section class="popular" id="popular">
+
+    <h1 class="heading"> most <span>popular</span> foods </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="/static/images/p-1.jpg" alt="">
+            <h3>tasty burger</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="/static/images/p-2.jpg" alt="">
+            <h3>tasty cakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="/static/images/p-3.jpg" alt="">
+            <h3>tasty sweets</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="/static/images/p-4.jpg" alt="">
+            <h3>tasty cupcakes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="/static/images/p-5.jpg" alt="">
+            <h3>cold drinks</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <span class="price"> $5 - $20 </span>
+            <img src="/static/images/p-6.jpg" alt="">
+            <h3>cold ice-cream</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- popular section ends -->
+
+<!-- steps section starts  -->
+
+<div class="step-container">
+
+    <h1 class="heading">how it <span>works</span></h1>
+
+    <section class="steps">
+
+        <div class="box">
+            <img src="/static/images/step-1.jpg" alt="">
+            <h3>choose your favorite food</h3>
+        </div>
+        <div class="box">
+            <img src="/static/images/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+        <div class="box">
+            <img src="/static/images/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="/static/images/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
     
-  </div>
-  
-</div>
+    </section>
 
 </div>
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container d-flex justify-content-center">
-    
-    <div class="card text-center" style="width: 70rem;">
-  <img src="https://source.unsplash.com/720x400/?nature" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h1 class="card-title">About Us</h1>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Read More...</a>
-  </div>
-</div>
-  </div>
-</div>
-<div class="jumbotron jumbotron-fluid d-flex justify-content-center" id="container">
-  <div class="container" id="unique">
-    <h4 id="cont">cell us your requirement</h4>
-    <p><strong>For the ease of your browsing into party bookings, you can always reach out to us 
-    via email giving us an idea about your requirement.</strong></p>
+<!-- steps section ends -->
 
-    <button type="button" class="btn btn-success">Book Now</button>
-    
-  </div>
-</div>
-<div class="jumbotron jumbotron-fluid" id="jumbo1">
-  <div class="container">
-    <table>
-      <tr>
-        <td id="vertical"></td>
-        <td class="vertical1"></td>
-        <td id="vertical"></td>
-      </tr>
-       <tr>
-        <td id="vertical2"></td>
-        <td class="vertical1" id="vertical2"></td>
-        <td id="vertical2"></td>
-      </tr>
-       <tr>
-        <td id="vertical"></td>
-        <td class="vertical1"></td>
-        <td id="vertical"></td>
-      </tr>
-    </table><br>
-    
-    <h1 id="u1">Featured Menu </h1><br>
-    <p id="u2"><strong>Have a look at our delicious and super healthy delicacies and order online for a wonderful experience.</strong></p>
-    <button type="button" class="btn btn-warning">Order Now</button>
-  </div>
-</div>
-<div class="jumbotron jumbotron-fluid d-flex justify-content-center" id="container">
-  <div class="container" id="unique">
-    <h4 id="cont">Now Order Food Online</h4>
-    
-    <button type="button" class="btn btn-success">Order Online</button>
-  </div>  
-</div>
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-     <h1 id="u1">Our Location</h1><br>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62223.762562838536!2d77.52700088456757!3d12.908675202298214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fd77cfe0bad%3A0x6f7c5eedf33993fa!2sSri%20Srinivasa%20Theatre!5e0!3m2!1sen!2sin!4v1595920302022!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading"> our food <span> gallery </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="/static/images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+        </div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/static/images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>tasty food</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
+                <a href="#" class="btn">ordern now</a>
+            </div>
+        </div>
+
     </div>
-  </div>
-<div class="jumbotron jumbotron-fluid">
-   <div class="container">
-     <section class="testimonials">
-      <div class="container text-center">
-        <h1>Testimonials</h1>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> our customers <span>reviews</span> </h1>
+        </div>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+        </div>
+        <div class="box">
+            <img src="/static/images/pic2.png" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+        </div>
+        <div class="box">
+            <img src="/static/images/pic3.png" alt="">
+            <h3>john deo</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>order</span> now </h1>
+
+    <div class="row">
         
-          <div class="row">
-            <div class="col-md-4 text-center">
-              <div class="profile">
-                <img src="https://image.shutterstock.com/image-photo/man-poses-passport-photo-260nw-207377266.jpg" class="user">
-                <blockquote>Excellent food.I have been here couple of times.Meghana special boneless Biriyani is really good.Quality and Quantity is really good. 1 plate is more than enough for 2 people(based on your apetite😀) Overall very good Biriyani..</blockquote>
-                <h3>Vinay Kumar <span>Co-Founder at XYZ</span></h3> 
-              </div>
-            </div>
-            <div class="col-md-4 text-center">
-              <div class="profile">
-                <img src="https://image.shutterstock.com/image-photo/man-poses-passport-photo-260nw-207377266.jpg" class="user">
-                <blockquote>Have been visiting this place from a long time. After a long session of workout, all I can think about is of their piping hot mutton biryani. The meat is always tender, nice n soft. Please ensure that the quality is maintained forever. Till now it has been amazing.</blockquote>
-                <h3>Vinay Kumar <span>Co-Founder at XYZ</span></h3> 
-              </div>
-            </div>
-            <div class="col-md-4 text-center">
-              <div class="profile">
-                <img src="https://image.shutterstock.com/image-photo/man-poses-passport-photo-260nw-207377266.jpg" class="user">
-                <blockquote>Excellent food. I always go for chicken boneless biryani and try different types of chicken starters each time. Huge in quantity and amazing in taste. You will always find a long queue whenever you visit this place.</blockquote>
-                <h3>Vinay Kumar <span>Co-Founder at XYZ</span></h3> 
-              </div>
-            </div>
-          </div>
-      </div>
-      </section>
-    </div>
-  </div>
-  <div class="container text-center">
-      <i class="fab fa-facebook" style="font-size: 3em;"></i>
-      <i class="fab fa-instagram" style="font-size: 3em;"></i>
-      <i class="fab fa-twitter" style="font-size: 3em;"></i>
-  </div> 
-{% endblock body %}
+        <div class="image">
+            <img src="/static/images/order-img.jpg" alt="">
+        </div>
+        </div>
 
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">pinterest</a>
+        <a href="#" class="btn">linkedin</a>
+    </div>
+
+    <h1 class="credit"> created by <span> Rajputs </span> &#169; </h1>
+
+</section>
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="/static/images/loader.gif" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="/static/script.js"></script>
+
+
+</body>
+</html>
+        </div>

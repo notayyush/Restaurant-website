@@ -11,166 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b4805de287.js" crossorigin="anonymous"></script>
- <style>
- .navbar{
-  position:absolute;
-  width:100%;
-  z-index:10;
-  max-width:100%;
-}
-.navbar-nav > li{
-  padding-left:30px;
-  padding-right:30px;
-  margin-left:30px;
-  margin-right:30px;
-}
-#active{
-  color:orange;
-}
-.navbar-nav{
-  font-weight:bold;
-}
-.navbar-brand{
-  font-weight:bold;
-  color:orange;
-}
-.jumbotron{
-  background-image: url("/static/2.jpg");
-}
-.card-title{
-  font-family: 'Monoton', cursive;
-}
-#cont{
- font-family: 'Diplomata SC', cursive;
- color:green;
-}
-#unique>p{
-  color:white;
-}
-#container{
-   background-image: url("https://source.unsplash.com/1600x1100/?food");
-    background-size:100%;
-   background-repeat:no-repeat;
-   height: 100%;
-   width: 100%;
-}
-#unique{
-  text-align:center;
-}
-
-.vertical1{
-  width:50px;
-  height:200px;
-}
-#vertical2{
-  height:50px;
-}
-
-#vertical{
-  border-left:solid 5px orange;
-  border-right:solid 5px orange;
-  border-top:solid 5px orange;
-  border-bottom:solid 5px orange;
-  width:500px;
-  height:200px;
-  background-image: url("https://source.unsplash.com/500x200/?food");
-}
-#jumbo1{
-  text-align:center;
-}
-#u1{
-   font-family: 'Dancing Script', cursive;
-   font-weight:bold;
-}
-#u2{
-  color:red;
-}
-.testimonials{
-  margin:50px auto;
-  
-}
-.testimonials h1{
-  text-align:center;
-  font-weight:bold;
-  color:#ff9800;
-  padding-bottom:10px;
-  text-transform:uppercase;
-}
-.testimonials h1::after{
-  content:'';
-  background:#ff9800;
-  display:block;
-  height:3px;
-  width:170px;
-  margin:20px auto 5px;
-}
-.testimonials .row{
-  margin-top:30px;
-}
-.col-md-4{
-  margin:40px auto;
-}
-.profile{
-  padding:70px 10px 10px;
-  background-color:#efefef;
-}
-.profile img{
-  top:-60px;
-  position:absolute;
-  left:calc(50% -60px);
-  border:10px solid white;
-}
-.user{
-  width:120px;
-  height:120px;
-  border-radius:50%;
-}
-.profile h3{
-  font-size:20px;
-  margin-top:15px;
-  color:#ff9800;
-}
-span{
-  font-size:12px;
-  color:#333;
-}
-blockquote{
-  font-size:16px;
-  line-height:30px;
-}
-blockquote::before{
-  content:'\93'
-  font-size:50px;
-  position:relative;
-  color:#ff9800;
-  line-height:20px;
-  bottom:-15px;
-  right:5px;
-}
-blockquote::after{
-  content:'\94'
-  font-size:50px;
-  position:relative;
-  color:#ff9800;
-  line-height:10px;
-  bottom:-15px;
-  left:5px;
-}
-.profile:hover{
-  box-shadow:0 0 15px 5px rgba(0,0,0,0.2);
-  cursor:pointer;
-  transition:0.5s;
-}
- .fab{
-  padding-left:30px;
-  padding-right:30px;
-  margin-left:30px;
-  margin-right:30px;
- }
-</style>
+ 
     
-
     <title>{% block title %}{% endblock title %}Resturant</title>
   </head>
   <body>
@@ -186,13 +30,13 @@ blockquote::after{
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" id="active" href="#">HOME <span class="sr-only">(current)</span></a>
+        <a class="nav-link"  href="/">HOME <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">ABOUT US</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">MENU</a>
+        <a class="nav-link" href="/menu.html">MENU</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">LOCATE US</a>

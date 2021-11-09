@@ -22,11 +22,12 @@ def contact(request):
         contactobj.save()
         messages.success(request, 'your message has been sent!')
     return render(request,'contacts.html')
-def index(request):
     
+def index(request):
     # if request.user.is_anonymous:
     #     return redirect("/login")
     return render(request,'index.html')
+
 # def loginUser(request):
 #     if request.method=="POST":
 #         username=request.POST.get('username')
@@ -43,10 +44,14 @@ def index(request):
 # def logoutUser(request):
 #     logout(request)
 #     return redirect("/login")
+
 # def signup(request):
 #     if request.method == "POST":
 #         username=request.POST.get('username')
 #         password=request.POST.get('password')
         
 #     return render(request,'signup.html')
+
+def menu(request):
+    return render(request,'menu.html')
     
